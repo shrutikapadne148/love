@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: rgb(241, 236, 243);
+            margin: 0;
+        }
+
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+    nav {
+        background-color: #222;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav h1 {
+        color: white;
+        margin: 0;
+    }
+
+    .nav-center {
+        display: flex;
+        gap: 5px;
+    }
+
+    .nav-center input {
+        width: 250px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+
+    .nav-center button {
+        padding: 8px 15px;
+        border: none;
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .nav-center button:hover {
+        background-color: darkorange;
+    }
+
+    .nav-right a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    <style>
+    nav {
+        background-color: #222;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav h1 {
+        color: white;
+        margin: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Dropdown */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        top: 25px;
+        left: 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f2f2f2;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+</style>
+<style>
+
+        /* Hero */
+        .hero {
+            background-color: #d16f6f;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Categories */
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .category {
+            border: 1px solid #ddd;
+            width: 220px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .category img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Login */
+        .login {
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .login input {
+            width: 250px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .login button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>Shopy</h1>
+
+    <div class="nav-center">
+        <input type="text" placeholder="Search products...">
+        <button>Search</button>
+    </div>
+
+    <nav>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Category ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Books</a>
+                <a href="#">Fashion</a>
+                <a href="#">Electronics</a>
+                <a href="#">Cookware
+                    
+                </a>
+            </div>
+        </div>
+
+        <a href="#">Login</a>
+    </div>
+</nav>
+
+    </div>
+    
+</nav>
+
+    
+</nav>
+
+
+<!-- Home -->
+<div class="hero">
+    <h2>Welcome to Shopy</h2>
+    <p>Your one-stop shop for all needs</p>
+</div>
+
+<!-- Categories -->
+<h2 style="text-align:center;">Categories</h2>
+<div class="categories">
+    <div class="category">
+        <img src="Fashion_JPG.jpg" alt="Fashion">
+        <h3>Fashion</h3>
+        <p>Clothes, Shoes, Accessories</p>
+    </div>
+
+    <div class="category">
+        <img src="Electronics_JPG.jpg" alt="Electronics">
+        <h3>Electronics</h3>
+        <p>Mobiles, Laptops, Gadgets</p>
+    </div>
+    <div class="category">
+         <img src="Cookware_JPG" alt="Cookware">
+         <h3>Cookware</h3>
+         <p>Pan, Cooker, pots</p>
+</div>
+<div class="category">
+    <img src="Books_JPG" alt="Books">
+    <h3>Books</h3>
+    <p>Reference book, school books, competitive books</p>
+</div>
+</div>
+<!-- Login -->
+<div class="login">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="password" placeholder="Password"><br>
+    <button>Login</button>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Shopy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
